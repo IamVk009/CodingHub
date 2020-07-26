@@ -1,0 +1,32 @@
+// Write a program that reads three integer numbers and prints true if exactly one number is positive (i.e. > 0).
+// Otherwise, it should print false.
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        // put your code here
+        int i = scanner.nextInt();
+        int j = scanner.nextInt();
+        int k = scanner.nextInt();
+        if (i > 0)
+        {
+            if (j > 0 || k > 0)
+                System.out.println("false");
+            else
+                System.out.println("true");
+        }
+        else if (j > 0)
+        {
+            if (k > 0)
+                System.out.println("false");
+            else
+                System.out.println("true");
+        }
+        else if (k > 0)
+            System.out.println("true");
+        else
+            System.out.println("false");
+    }
+}
