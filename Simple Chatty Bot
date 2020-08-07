@@ -1,14 +1,12 @@
-// This is the project of JetBrains Academy.
-
-package bot;
+// This is the project of JetBrains Academy to create Simple Chat-Bot
 
 import java.util.Scanner;
 
-public class SimpleBot {
-    final static Scanner scanner = new Scanner(System.in); // Do not change this line
+public class ChattyBot {
+    final static Scanner scanner = new Scanner(System.in); 
 
     public static void main(String[] args) {
-        greet("Aid", "2020"); // change it as you need
+        greet("Aid", "2020"); 
         remindName();
         guessAge();
         count();
@@ -48,16 +46,14 @@ public class SimpleBot {
     static void test() {
         System.out.println("Let's test your programming knowledge.");
         System.out.println("Why do we use methods in java?");
-        System.out.println("1. To repeat a statement multiple times.\n 2. To decompose a program into several small subroutines.\n3. To determine the execution time of a program.\n 4. To interrupt the execution of a program.");
+        System.out.println("1. To repeat a statement multiple times.\n2. To decompose a program into several small subroutines.\n3. To determine the execution time of a program.\n4. To interrupt the execution of a program.");
         // write your code here
         int ans = scanner.nextInt();
-        if (ans == 2)
-            System.out.println("Congratulations, have a nice day!");
-        else
+        if (ans != 2)
             System.out.println("Please, try again.");
     }
 
     static void end() {
-        System.out.println("Congratulations, have a nice day!"); // Do not change this text
+        System.out.println("Congratulations, have a nice day!"); 
     }
 }
